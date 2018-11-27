@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32C4E41E612677AE18B4F464 /* libPods-cathaybkPractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CC0C0AC47D0FB5B960C269 /* libPods-cathaybkPractice.a */; };
 		9B6AECF121AD1F50000E96FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AECF021AD1F50000E96FB /* AppDelegate.m */; };
 		9B6AECF421AD1F50000E96FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AECF321AD1F50000E96FB /* ViewController.m */; };
 		9B6AECF721AD1F50000E96FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6AECF521AD1F50000E96FB /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EA7F2123B6A52947132E649 /* Pods-cathaybkPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cathaybkPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cathaybkPractice/Pods-cathaybkPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		48CC0C0AC47D0FB5B960C269 /* libPods-cathaybkPractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cathaybkPractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6AECEC21AD1F50000E96FB /* cathaybkPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cathaybkPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6AECEF21AD1F50000E96FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B6AECF021AD1F50000E96FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		9B6AECFB21AD1F52000E96FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B6AECFD21AD1F52000E96FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B6AECFE21AD1F52000E96FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B8A906D61E7EFE6EC596A7C /* Pods-cathaybkPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cathaybkPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-cathaybkPractice/Pods-cathaybkPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C4E41E612677AE18B4F464 /* libPods-cathaybkPractice.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		639FB5490BD1EFF21B4B28A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EA7F2123B6A52947132E649 /* Pods-cathaybkPractice.debug.xcconfig */,
+				9B8A906D61E7EFE6EC596A7C /* Pods-cathaybkPractice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9B6AECE321AD1F50000E96FB = {
 			isa = PBXGroup;
 			children = (
 				9B6AECEE21AD1F50000E96FB /* cathaybkPractice */,
 				9B6AECED21AD1F50000E96FB /* Products */,
+				639FB5490BD1EFF21B4B28A1 /* Pods */,
+				F68EA35447A5A254F76F33BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = cathaybkPractice;
 			sourceTree = "<group>";
 		};
+		F68EA35447A5A254F76F33BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48CC0C0AC47D0FB5B960C269 /* libPods-cathaybkPractice.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B6AED0221AD1F52000E96FB /* Build configuration list for PBXNativeTarget "cathaybkPractice" */;
 			buildPhases = (
+				348FCB5884081D924D67D797 /* [CP] Check Pods Manifest.lock */,
 				9B6AECE821AD1F50000E96FB /* Sources */,
 				9B6AECE921AD1F50000E96FB /* Frameworks */,
 				9B6AECEA21AD1F50000E96FB /* Resources */,
@@ -135,6 +160,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		348FCB5884081D924D67D797 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cathaybkPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B6AECE821AD1F50000E96FB /* Sources */ = {
@@ -283,11 +333,13 @@
 		};
 		9B6AED0321AD1F52000E96FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA7F2123B6A52947132E649 /* Pods-cathaybkPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3J4P748ZX6;
 				INFOPLIST_FILE = cathaybkPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +352,13 @@
 		};
 		9B6AED0421AD1F52000E96FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8A906D61E7EFE6EC596A7C /* Pods-cathaybkPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3J4P748ZX6;
 				INFOPLIST_FILE = cathaybkPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
