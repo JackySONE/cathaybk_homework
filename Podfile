@@ -10,4 +10,7 @@ target 'cathaybkPractice' do
 
   #Internet
   pod 'AFNetworking'
+
+  pod 'OrderedDictionary',           :git => 'https://github.com/nicklockwood/OrderedDictionary'
+
 end

@@ -17,20 +17,32 @@ PODS:
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
+  - OrderedDictionary (1.4)
 
 DEPENDENCIES:
   - AFNetworking
   - Mantle (~> 2.1.0)
+  - OrderedDictionary (from `https://github.com/nicklockwood/OrderedDictionary`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - Mantle
 
+EXTERNAL SOURCES:
+  OrderedDictionary:
+    :git: https://github.com/nicklockwood/OrderedDictionary
+
+CHECKOUT OPTIONS:
+  OrderedDictionary:
+    :commit: 246983a106634f77111886dc238551a670e2f49b
+    :git: https://github.com/nicklockwood/OrderedDictionary
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  OrderedDictionary: 138c8d2e358d3a0c9adda15c6c7db24e8e3b09e6
 
-PODFILE CHECKSUM: de14d72c8f5761ce2358eb2bf6ad886a0cc77856
+PODFILE CHECKSUM: 8e4da7860dcb48979e2dbcc3047c1f101b9ece05
 
 COCOAPODS: 1.5.3

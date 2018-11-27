@@ -14,6 +14,7 @@
 		9B6AECF921AD1F52000E96FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6AECF821AD1F52000E96FB /* Assets.xcassets */; };
 		9B6AECFC21AD1F52000E96FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6AECFA21AD1F52000E96FB /* LaunchScreen.storyboard */; };
 		9B6AECFF21AD1F52000E96FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AECFE21AD1F52000E96FB /* main.m */; };
+		9B6AED0F21AD29BA000E96FB /* HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED0D21AD29B9000E96FB /* HTTPSessionManager.m */; };
 		9B6AED1821ADAB38000E96FB /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1721ADAB38000E96FB /* BaseResponse.m */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		9B6AECFB21AD1F52000E96FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B6AECFD21AD1F52000E96FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B6AECFE21AD1F52000E96FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B6AED0D21AD29B9000E96FB /* HTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPSessionManager.m; sourceTree = "<group>"; };
+		9B6AED0E21AD29BA000E96FB /* HTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSessionManager.h; sourceTree = "<group>"; };
 		9B6AED1621ADAB38000E96FB /* BaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
 		9B6AED1721ADAB38000E96FB /* BaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
 		9B8A906D61E7EFE6EC596A7C /* Pods-cathaybkPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cathaybkPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-cathaybkPractice/Pods-cathaybkPractice.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		9B6AED0521AD246C000E96FB /* API */ = {
 			isa = PBXGroup;
 			children = (
+				9B6AED1021ADA4D7000E96FB /* Networking */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -106,6 +110,15 @@
 				9B6AED1721ADAB38000E96FB /* BaseResponse.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9B6AED1021ADA4D7000E96FB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9B6AED0E21AD29BA000E96FB /* HTTPSessionManager.h */,
+				9B6AED0D21AD29B9000E96FB /* HTTPSessionManager.m */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		F68EA35447A5A254F76F33BA /* Frameworks */ = {
@@ -212,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6AED0F21AD29BA000E96FB /* HTTPSessionManager.m in Sources */,
 				9B6AED1821ADAB38000E96FB /* BaseResponse.m in Sources */,
 				9B6AECF421AD1F50000E96FB /* ViewController.m in Sources */,
 				9B6AECFF21AD1F52000E96FB /* main.m in Sources */,
