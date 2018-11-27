@@ -1,5 +1,5 @@
 //
-//  baseResponse.h
+//  BaseResponse.h
 //  cathaybkPractice
 //
 //  Created by JackySONE on 2018/11/27.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface baseResponse : MTLModel <MTLJSONSerializing>
+@interface BaseResponse : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, strong) NSNumber *limit;
 @property (nonatomic, strong) NSNumber *offset;

@@ -14,7 +14,7 @@
 		9B6AECF921AD1F52000E96FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6AECF821AD1F52000E96FB /* Assets.xcassets */; };
 		9B6AECFC21AD1F52000E96FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6AECFA21AD1F52000E96FB /* LaunchScreen.storyboard */; };
 		9B6AECFF21AD1F52000E96FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AECFE21AD1F52000E96FB /* main.m */; };
-		9B6AED0921AD25DE000E96FB /* baseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED0821AD25DE000E96FB /* baseResponse.m */; };
+		9B6AED1821ADAB38000E96FB /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1721ADAB38000E96FB /* BaseResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		9B6AECFB21AD1F52000E96FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B6AECFD21AD1F52000E96FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B6AECFE21AD1F52000E96FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9B6AED0721AD25DE000E96FB /* baseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baseResponse.h; sourceTree = "<group>"; };
-		9B6AED0821AD25DE000E96FB /* baseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baseResponse.m; sourceTree = "<group>"; };
+		9B6AED1621ADAB38000E96FB /* BaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
+		9B6AED1721ADAB38000E96FB /* BaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
 		9B8A906D61E7EFE6EC596A7C /* Pods-cathaybkPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cathaybkPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-cathaybkPractice/Pods-cathaybkPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,8 +102,8 @@
 		9B6AED0621AD24C7000E96FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9B6AED0721AD25DE000E96FB /* baseResponse.h */,
-				9B6AED0821AD25DE000E96FB /* baseResponse.m */,
+				9B6AED1621ADAB38000E96FB /* BaseResponse.h */,
+				9B6AED1721ADAB38000E96FB /* BaseResponse.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,10 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6AED1821ADAB38000E96FB /* BaseResponse.m in Sources */,
 				9B6AECF421AD1F50000E96FB /* ViewController.m in Sources */,
 				9B6AECFF21AD1F52000E96FB /* main.m in Sources */,
 				9B6AECF121AD1F50000E96FB /* AppDelegate.m in Sources */,
-				9B6AED0921AD25DE000E96FB /* baseResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

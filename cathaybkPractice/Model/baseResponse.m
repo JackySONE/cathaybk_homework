@@ -1,23 +1,22 @@
 //
-//  baseResponse.m
+//  BaseResponse.m
 //  cathaybkPractice
 //
-//  Created by JackySONE on 2018/11/27.
+//  Created by JackySONE on 2018/11/28.
 //  Copyright © 2018 JackySONE. All rights reserved.
 //
 
-#import "baseResponse.h"
+#import "BaseResponse.h"
 
-@implementation baseResponse
+@implementation BaseResponse
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    return @{
-             @"limit"  : @"limit",
-             @"offset" : @"offset",
-             @"count"  : @"count",
-             @"data"   : @"results",
-             };
+    return @{ @"limit" : @"limit",
+              @"offset" : @"offset",
+              @"count"    : @"count",
+              @"data"    : @"results",
+              };
 }
 
 @end
