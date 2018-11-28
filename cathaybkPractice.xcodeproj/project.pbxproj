@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		32C4E41E612677AE18B4F464 /* libPods-cathaybkPractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CC0C0AC47D0FB5B960C269 /* libPods-cathaybkPractice.a */; };
 		9B6AECF121AD1F50000E96FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AECF021AD1F50000E96FB /* AppDelegate.m */; };
-		9B6AECF421AD1F50000E96FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AECF321AD1F50000E96FB /* ViewController.m */; };
 		9B6AECF721AD1F50000E96FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6AECF521AD1F50000E96FB /* Main.storyboard */; };
 		9B6AECF921AD1F52000E96FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6AECF821AD1F52000E96FB /* Assets.xcassets */; };
 		9B6AECFC21AD1F52000E96FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6AECFA21AD1F52000E96FB /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		9B6AED1321ADA585000E96FB /* AnimalDataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1221ADA585000E96FB /* AnimalDataAPI.m */; };
 		9B6AED1821ADAB38000E96FB /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1721ADAB38000E96FB /* BaseResponse.m */; };
 		9B6AED1B21ADAF72000E96FB /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1A21ADAF72000E96FB /* Animal.m */; };
+		9B6AED1F21AE5ED5000E96FB /* AnimalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1E21AE5ED5000E96FB /* AnimalListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,6 @@
 		9B6AECEC21AD1F50000E96FB /* cathaybkPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cathaybkPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6AECEF21AD1F50000E96FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B6AECF021AD1F50000E96FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9B6AECF221AD1F50000E96FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9B6AECF321AD1F50000E96FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9B6AECF621AD1F50000E96FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B6AECF821AD1F52000E96FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B6AECFB21AD1F52000E96FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +39,8 @@
 		9B6AED1721ADAB38000E96FB /* BaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
 		9B6AED1921ADAF72000E96FB /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		9B6AED1A21ADAF72000E96FB /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		9B6AED1D21AE5ED5000E96FB /* AnimalListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalListViewController.h; sourceTree = "<group>"; };
+		9B6AED1E21AE5ED5000E96FB /* AnimalListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalListViewController.m; sourceTree = "<group>"; };
 		9B8A906D61E7EFE6EC596A7C /* Pods-cathaybkPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cathaybkPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-cathaybkPractice/Pods-cathaybkPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,12 +86,11 @@
 		9B6AECEE21AD1F50000E96FB /* cathaybkPractice */ = {
 			isa = PBXGroup;
 			children = (
+				9B6AED1C21AE5E99000E96FB /* ViewControllers */,
 				9B6AED0621AD24C7000E96FB /* Model */,
 				9B6AED0521AD246C000E96FB /* API */,
 				9B6AECEF21AD1F50000E96FB /* AppDelegate.h */,
 				9B6AECF021AD1F50000E96FB /* AppDelegate.m */,
-				9B6AECF221AD1F50000E96FB /* ViewController.h */,
-				9B6AECF321AD1F50000E96FB /* ViewController.m */,
 				9B6AECF521AD1F50000E96FB /* Main.storyboard */,
 				9B6AECF821AD1F52000E96FB /* Assets.xcassets */,
 				9B6AECFA21AD1F52000E96FB /* LaunchScreen.storyboard */,
@@ -129,6 +128,15 @@
 				9B6AED0D21AD29B9000E96FB /* HTTPSessionManager.m */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		9B6AED1C21AE5E99000E96FB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B6AED1D21AE5ED5000E96FB /* AnimalListViewController.h */,
+				9B6AED1E21AE5ED5000E96FB /* AnimalListViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		F68EA35447A5A254F76F33BA /* Frameworks */ = {
@@ -237,7 +245,7 @@
 			files = (
 				9B6AED0F21AD29BA000E96FB /* HTTPSessionManager.m in Sources */,
 				9B6AED1821ADAB38000E96FB /* BaseResponse.m in Sources */,
-				9B6AECF421AD1F50000E96FB /* ViewController.m in Sources */,
+				9B6AED1F21AE5ED5000E96FB /* AnimalListViewController.m in Sources */,
 				9B6AED1321ADA585000E96FB /* AnimalDataAPI.m in Sources */,
 				9B6AED1B21ADAF72000E96FB /* Animal.m in Sources */,
 				9B6AECFF21AD1F52000E96FB /* main.m in Sources */,
