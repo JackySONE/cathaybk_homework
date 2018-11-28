@@ -41,6 +41,7 @@
 		9B6AED1A21ADAF72000E96FB /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		9B6AED1D21AE5ED5000E96FB /* AnimalListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalListViewController.h; sourceTree = "<group>"; };
 		9B6AED1E21AE5ED5000E96FB /* AnimalListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalListViewController.m; sourceTree = "<group>"; };
+		9B6AED2821AE6787000E96FB /* CommonImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonImport.h; sourceTree = "<group>"; };
 		9B8A906D61E7EFE6EC596A7C /* Pods-cathaybkPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cathaybkPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-cathaybkPractice/Pods-cathaybkPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +97,7 @@
 				9B6AECFA21AD1F52000E96FB /* LaunchScreen.storyboard */,
 				9B6AECFD21AD1F52000E96FB /* Info.plist */,
 				9B6AECFE21AD1F52000E96FB /* main.m */,
+				9B6AED2821AE6787000E96FB /* CommonImport.h */,
 			);
 			path = cathaybkPractice;
 			sourceTree = "<group>";
