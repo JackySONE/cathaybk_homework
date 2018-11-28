@@ -21,6 +21,9 @@ const CGFloat kMinHeaderHeight = 44.f;
 
 @property (weak, nonatomic) IBOutlet UIView             *fakeNavigationBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *fakeNavigationBarHeightConstraint;
+@property (weak, nonatomic) IBOutlet UILabel            *fakeNavigationTitle;
+@property (weak, nonatomic) IBOutlet UILabel            *organizationName;
+
 @property (weak, nonatomic) IBOutlet UITableView        *tableView;
 
 @property (nonatomic, strong) AnimalListViewModel       *viewModel;
@@ -104,6 +107,7 @@ const CGFloat kMinHeaderHeight = 44.f;
     [self.view layoutIfNeeded];
     [UIView animateWithDuration:0.2f animations:^{
         self.fakeNavigationBarHeightConstraint.constant = kMinHeaderHeight;
+        [self didFakeNavigationContentHeight:kMinHeaderHeight];
         [self.view layoutIfNeeded];
     }];
 }
@@ -113,8 +117,20 @@ const CGFloat kMinHeaderHeight = 44.f;
     [self.view layoutIfNeeded];
     [UIView animateWithDuration:0.2f animations:^{
         self.fakeNavigationBarHeightConstraint.constant = kMaxHeaderHeight;
+        [self didFakeNavigationContentHeight:kMaxHeaderHeight];
         [self.view layoutIfNeeded];
     }];
+}
+
+- (void)didFakeNavigationContentHeight:(CGFloat)contentHeight
+{
+    CGFloat totalScroll = kMaxHeaderHeight - kMinHeaderHeight;
+    CGFloat offset = kMaxHeaderHeight - contentHeight;
+    CGFloat percentage = offset / totalScroll;
+
+    /* When percentage = 0, the alpha should be 1 so we should flip the percentage. */
+    self.organizationName.alpha = (1.f - percentage);
+    self.fakeNavigationTitle.alpha = percentage;
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -145,6 +161,8 @@ const CGFloat kMinHeaderHeight = 44.f;
         }
 
         self.previousScrollOffset = scrollView.contentOffset.y;
+
+        [self didFakeNavigationContentHeight:newHeight];
     }
 }
 
