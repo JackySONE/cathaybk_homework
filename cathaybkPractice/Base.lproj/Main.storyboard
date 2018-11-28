@@ -18,8 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noX-o8-j3K">
+                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2Rl-hk-TaW"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="10L-P8-rxV">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="220" width="375" height="398"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnimalListCell" rowHeight="296" id="SHC-hd-te8" customClass="AnimalListCell">
@@ -88,15 +95,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="noX-o8-j3K" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6X7-2v-Kdn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="10L-P8-rxV" secondAttribute="bottom" id="LcT-CA-bvH"/>
                             <constraint firstItem="10L-P8-rxV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UDO-zs-8cV"/>
-                            <constraint firstItem="10L-P8-rxV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="X29-hI-iM9"/>
+                            <constraint firstItem="noX-o8-j3K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zii-Jp-Ij1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="10L-P8-rxV" secondAttribute="trailing" id="ecf-xq-J2z"/>
+                            <constraint firstItem="10L-P8-rxV" firstAttribute="top" secondItem="noX-o8-j3K" secondAttribute="bottom" id="llw-R8-R4V"/>
+                            <constraint firstItem="noX-o8-j3K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xXM-eP-A0b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="b8T-aM-BiP"/>
                     <connections>
+                        <outlet property="headerHeightConstraint" destination="2Rl-hk-TaW" id="58D-cP-Lua"/>
+                        <outlet property="headerView" destination="noX-o8-j3K" id="Rlq-Pn-oqo"/>
                         <outlet property="tableView" destination="10L-P8-rxV" id="PSn-Wj-mbf"/>
                     </connections>
                 </viewController>
