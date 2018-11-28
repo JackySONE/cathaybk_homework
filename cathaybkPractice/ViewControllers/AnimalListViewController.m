@@ -14,8 +14,8 @@
 
 #import "CommonImport.h"
 
-#define MaxHeaderHeight 200
-#define MinHeaderHeight 44
+const CGFloat kMaxHeaderHeight = 200.f;
+const CGFloat kMinHeaderHeight = 44.f;
 
 @interface AnimalListViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -42,7 +42,7 @@
 {
     [super viewWillAppear:animated];
     // Header
-    self.fakeNavigationBarHeightConstraint.constant = MaxHeaderHeight;
+    self.fakeNavigationBarHeightConstraint.constant = kMaxHeaderHeight;
 }
 
 #pragma mark - Custom Accessories
@@ -74,7 +74,7 @@
 - (BOOL)canAnimateHeader:(UIScrollView *)scrollView
 {
     // Calculate the size of the scrollView when header is collapsed
-    CGFloat scrollViewMaxHeight = scrollView.frame.size.height + self.fakeNavigationBarHeightConstraint.constant - MinHeaderHeight;
+    CGFloat scrollViewMaxHeight = scrollView.frame.size.height + self.fakeNavigationBarHeightConstraint.constant - kMinHeaderHeight;
 
     // Make sure that when header is collapsed, there is still room to scroll
     return scrollView.contentSize.height > scrollViewMaxHeight;
@@ -87,8 +87,8 @@
 
 - (void)scrollViewDidStopScrolling
 {
-    CGFloat range = MaxHeaderHeight - MinHeaderHeight;
-    CGFloat midPoint = MinHeaderHeight + (range / 2);
+    CGFloat range = kMaxHeaderHeight - kMinHeaderHeight;
+    CGFloat midPoint = kMinHeaderHeight + (range / 2);
 
     if (self.fakeNavigationBarHeightConstraint.constant > midPoint) {
         // expand header
@@ -103,7 +103,7 @@
 {
     [self.view layoutIfNeeded];
     [UIView animateWithDuration:0.2f animations:^{
-        self.fakeNavigationBarHeightConstraint.constant = MinHeaderHeight;
+        self.fakeNavigationBarHeightConstraint.constant = kMinHeaderHeight;
         [self.view layoutIfNeeded];
     }];
 }
@@ -112,7 +112,7 @@
 {
     [self.view layoutIfNeeded];
     [UIView animateWithDuration:0.2f animations:^{
-        self.fakeNavigationBarHeightConstraint.constant = MaxHeaderHeight;
+        self.fakeNavigationBarHeightConstraint.constant = kMaxHeaderHeight;
         [self.view layoutIfNeeded];
     }];
 }
@@ -133,9 +133,9 @@
         // Calculate new header height
         CGFloat newHeight = self.fakeNavigationBarHeightConstraint.constant;
         if (isScrollingDwon) {
-            newHeight = MAX(MinHeaderHeight, self.fakeNavigationBarHeightConstraint.constant - fabs(scrollDiff));
+            newHeight = MAX(kMinHeaderHeight, self.fakeNavigationBarHeightConstraint.constant - fabs(scrollDiff));
         } else if (isScrollingUp){
-            newHeight = MIN(MaxHeaderHeight, self.fakeNavigationBarHeightConstraint.constant + fabs(scrollDiff));
+            newHeight = MIN(kMaxHeaderHeight, self.fakeNavigationBarHeightConstraint.constant + fabs(scrollDiff));
         }
 
         // Header needs to animate
