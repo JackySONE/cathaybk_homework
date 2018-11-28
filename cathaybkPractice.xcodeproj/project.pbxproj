@@ -96,6 +96,8 @@
 		9B6AECEE21AD1F50000E96FB /* cathaybkPractice */ = {
 			isa = PBXGroup;
 			children = (
+				9B6AED3621AEDEA4000E96FB /* Helpers */,
+				9B6AED3721AEE47B000E96FB /* Storyboard */,
 				9B6AED2921AE6F0D000E96FB /* View */,
 				9B6AED2021AE6024000E96FB /* ViewModel */,
 				9B6AED1C21AE5E99000E96FB /* ViewControllers */,
@@ -103,12 +105,9 @@
 				9B6AED0521AD246C000E96FB /* API */,
 				9B6AECEF21AD1F50000E96FB /* AppDelegate.h */,
 				9B6AECF021AD1F50000E96FB /* AppDelegate.m */,
-				9B6AECF521AD1F50000E96FB /* Main.storyboard */,
 				9B6AECF821AD1F52000E96FB /* Assets.xcassets */,
-				9B6AECFA21AD1F52000E96FB /* LaunchScreen.storyboard */,
 				9B6AECFD21AD1F52000E96FB /* Info.plist */,
 				9B6AECFE21AD1F52000E96FB /* main.m */,
-				9B6AED2821AE6787000E96FB /* CommonImport.h */,
 			);
 			path = cathaybkPractice;
 			sourceTree = "<group>";
@@ -170,6 +169,23 @@
 				9B6AED2B21AE6F37000E96FB /* AnimalListCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9B6AED3621AEDEA4000E96FB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9B6AED2821AE6787000E96FB /* CommonImport.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9B6AED3721AEE47B000E96FB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9B6AECFA21AD1F52000E96FB /* LaunchScreen.storyboard */,
+				9B6AECF521AD1F50000E96FB /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		F68EA35447A5A254F76F33BA /* Frameworks */ = {
