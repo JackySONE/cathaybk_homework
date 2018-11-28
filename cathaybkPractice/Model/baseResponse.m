@@ -12,10 +12,10 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    return @{ @"limit" : @"limit",
+    return @{ @"limit"  : @"limit",
               @"offset" : @"offset",
-              @"count"    : @"count",
-              @"data"    : @"results",
+              @"count"  : @"count",
+              @"data"   : @"results",
               };
 }
 
