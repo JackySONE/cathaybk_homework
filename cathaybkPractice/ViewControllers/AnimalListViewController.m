@@ -19,8 +19,8 @@
 
 @interface AnimalListViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UIView             *headerView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *headerHeightConstraint;
+@property (weak, nonatomic) IBOutlet UIView             *fakeNavigationBar;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *fakeNavigationBarHeightConstraint;
 @property (weak, nonatomic) IBOutlet UITableView        *tableView;
 
 @property (nonatomic, strong) AnimalListViewModel       *viewModel;
@@ -42,7 +42,7 @@
 {
     [super viewWillAppear:animated];
     // Header
-    self.headerHeightConstraint.constant = MaxHeaderHeight;
+    self.fakeNavigationBarHeightConstraint.constant = MaxHeaderHeight;
 }
 
 #pragma mark - Custom Accessories
@@ -74,7 +74,7 @@
 - (BOOL)canAnimateHeader:(UIScrollView *)scrollView
 {
     // Calculate the size of the scrollView when header is collapsed
-    CGFloat scrollViewMaxHeight = scrollView.frame.size.height + self.headerHeightConstraint.constant - MinHeaderHeight;
+    CGFloat scrollViewMaxHeight = scrollView.frame.size.height + self.fakeNavigationBarHeightConstraint.constant - MinHeaderHeight;
 
     // Make sure that when header is collapsed, there is still room to scroll
     return scrollView.contentSize.height > scrollViewMaxHeight;
@@ -83,6 +83,38 @@
 - (void)setScrollPosition:(CGFloat)position
 {
     self.tableView.contentOffset = CGPointMake(self.tableView.contentOffset.x, position);
+}
+
+- (void)scrollViewDidStopScrolling
+{
+    CGFloat range = MaxHeaderHeight - MinHeaderHeight;
+    CGFloat midPoint = MinHeaderHeight + (range / 2);
+
+    if (self.fakeNavigationBarHeightConstraint.constant > midPoint) {
+        // expand header
+        [self expandHeader];
+    } else {
+        // collapse header
+        [self collapseHeader];
+    }
+}
+
+- (void)collapseHeader
+{
+    [self.view layoutIfNeeded];
+    [UIView animateWithDuration:0.2f animations:^{
+        self.fakeNavigationBarHeightConstraint.constant = MinHeaderHeight;
+        [self.view layoutIfNeeded];
+    }];
+}
+
+- (void)expandHeader
+{
+    [self.view layoutIfNeeded];
+    [UIView animateWithDuration:0.2f animations:^{
+        self.fakeNavigationBarHeightConstraint.constant = MaxHeaderHeight;
+        [self.view layoutIfNeeded];
+    }];
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -99,20 +131,32 @@
     if ([self canAnimateHeader:scrollView]) {
 
         // Calculate new header height
-        CGFloat newHeight = self.headerHeightConstraint.constant;
+        CGFloat newHeight = self.fakeNavigationBarHeightConstraint.constant;
         if (isScrollingDwon) {
-            newHeight = MAX(MinHeaderHeight, self.headerHeightConstraint.constant - fabs(scrollDiff));
+            newHeight = MAX(MinHeaderHeight, self.fakeNavigationBarHeightConstraint.constant - fabs(scrollDiff));
         } else if (isScrollingUp){
-            newHeight = MIN(MaxHeaderHeight, self.headerHeightConstraint.constant + fabs(scrollDiff));
+            newHeight = MIN(MaxHeaderHeight, self.fakeNavigationBarHeightConstraint.constant + fabs(scrollDiff));
         }
 
         // Header needs to animate
-        if (newHeight != self.headerHeightConstraint.constant) {
-            self.headerHeightConstraint.constant = newHeight;
+        if (newHeight != self.fakeNavigationBarHeightConstraint.constant) {
+            self.fakeNavigationBarHeightConstraint.constant = newHeight;
             [self setScrollPosition:self.previousScrollOffset];
         }
 
         self.previousScrollOffset = scrollView.contentOffset.y;
+    }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [self scrollViewDidStopScrolling];
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    if (!decelerate) {
+        [self scrollViewDidStopScrolling];
     }
 }
 

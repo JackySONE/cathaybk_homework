@@ -107,8 +107,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="b8T-aM-BiP"/>
                     <connections>
-                        <outlet property="headerHeightConstraint" destination="2Rl-hk-TaW" id="58D-cP-Lua"/>
-                        <outlet property="headerView" destination="noX-o8-j3K" id="Rlq-Pn-oqo"/>
+                        <outlet property="fakeNavigationBar" destination="noX-o8-j3K" id="Rlq-Pn-oqo"/>
+                        <outlet property="fakeNavigationBarHeightConstraint" destination="2Rl-hk-TaW" id="58D-cP-Lua"/>
                         <outlet property="tableView" destination="10L-P8-rxV" id="PSn-Wj-mbf"/>
                     </connections>
                 </viewController>
