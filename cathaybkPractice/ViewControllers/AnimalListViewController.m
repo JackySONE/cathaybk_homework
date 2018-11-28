@@ -107,7 +107,7 @@ const CGFloat kMinHeaderHeight = 44.f;
     [self.view layoutIfNeeded];
     [UIView animateWithDuration:0.2f animations:^{
         self.fakeNavigationBarHeightConstraint.constant = kMinHeaderHeight;
-        [self didFakeNavigationContentHeight:kMinHeaderHeight];
+        [self animateFakeNavigationContentWithHeight:kMinHeaderHeight];
         [self.view layoutIfNeeded];
     }];
 }
@@ -117,12 +117,12 @@ const CGFloat kMinHeaderHeight = 44.f;
     [self.view layoutIfNeeded];
     [UIView animateWithDuration:0.2f animations:^{
         self.fakeNavigationBarHeightConstraint.constant = kMaxHeaderHeight;
-        [self didFakeNavigationContentHeight:kMaxHeaderHeight];
+        [self animateFakeNavigationContentWithHeight:kMaxHeaderHeight];
         [self.view layoutIfNeeded];
     }];
 }
 
-- (void)didFakeNavigationContentHeight:(CGFloat)contentHeight
+- (void)animateFakeNavigationContentWithHeight:(CGFloat)contentHeight
 {
     CGFloat totalScroll = kMaxHeaderHeight - kMinHeaderHeight;
     CGFloat offset = kMaxHeaderHeight - contentHeight;
@@ -162,7 +162,7 @@ const CGFloat kMinHeaderHeight = 44.f;
 
         self.previousScrollOffset = scrollView.contentOffset.y;
 
-        [self didFakeNavigationContentHeight:newHeight];
+        [self animateFakeNavigationContentWithHeight:newHeight];
     }
 }
 
