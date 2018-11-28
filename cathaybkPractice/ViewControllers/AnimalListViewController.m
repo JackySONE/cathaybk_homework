@@ -10,6 +10,7 @@
 
 #import "AnimalListViewModel.h"
 #import "Animal.h"
+#import "AnimalListCell.h"
 
 #import "CommonImport.h"
 
@@ -69,11 +70,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+     AnimalListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([AnimalListCell class]) forIndexPath:indexPath];
 
     if (self.viewModel.items.count > indexPath.row) {
         Animal *animal = (Animal *)self.viewModel.items[indexPath.row];
-        cell.textLabel.text = [NSString stringWithFormat:@"%ld: %@", (long)indexPath.row, animal.nameCh];
+        [cell cofigureWithModel:animal];
     }
 
     if (indexPath.row == self.viewModel.items.count - 1) {

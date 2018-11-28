@@ -20,6 +20,7 @@
 		9B6AED1F21AE5ED5000E96FB /* AnimalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1E21AE5ED5000E96FB /* AnimalListViewController.m */; };
 		9B6AED2321AE604F000E96FB /* PageBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED2221AE604F000E96FB /* PageBaseViewModel.m */; };
 		9B6AED2621AE6348000E96FB /* AnimalListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED2521AE6348000E96FB /* AnimalListViewModel.m */; };
+		9B6AED2C21AE6F37000E96FB /* AnimalListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED2B21AE6F37000E96FB /* AnimalListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		9B6AED2421AE6348000E96FB /* AnimalListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalListViewModel.h; sourceTree = "<group>"; };
 		9B6AED2521AE6348000E96FB /* AnimalListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalListViewModel.m; sourceTree = "<group>"; };
 		9B6AED2821AE6787000E96FB /* CommonImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonImport.h; sourceTree = "<group>"; };
+		9B6AED2A21AE6F37000E96FB /* AnimalListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalListCell.h; sourceTree = "<group>"; };
+		9B6AED2B21AE6F37000E96FB /* AnimalListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalListCell.m; sourceTree = "<group>"; };
 		9B8A906D61E7EFE6EC596A7C /* Pods-cathaybkPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cathaybkPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-cathaybkPractice/Pods-cathaybkPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +96,7 @@
 		9B6AECEE21AD1F50000E96FB /* cathaybkPractice */ = {
 			isa = PBXGroup;
 			children = (
+				9B6AED2921AE6F0D000E96FB /* View */,
 				9B6AED2021AE6024000E96FB /* ViewModel */,
 				9B6AED1C21AE5E99000E96FB /* ViewControllers */,
 				9B6AED0621AD24C7000E96FB /* Model */,
@@ -157,6 +161,15 @@
 				9B6AED2521AE6348000E96FB /* AnimalListViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9B6AED2921AE6F0D000E96FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B6AED2A21AE6F37000E96FB /* AnimalListCell.h */,
+				9B6AED2B21AE6F37000E96FB /* AnimalListCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F68EA35447A5A254F76F33BA /* Frameworks */ = {
@@ -272,6 +285,7 @@
 				9B6AED1B21ADAF72000E96FB /* Animal.m in Sources */,
 				9B6AECFF21AD1F52000E96FB /* main.m in Sources */,
 				9B6AECF121AD1F50000E96FB /* AppDelegate.m in Sources */,
+				9B6AED2C21AE6F37000E96FB /* AnimalListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
