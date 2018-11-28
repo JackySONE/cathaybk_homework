@@ -8,6 +8,8 @@
 
 #import "AnimalListCell.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
 #import "Animal.h"
 
 @interface AnimalListCell ()
@@ -31,6 +33,8 @@
         behaviorOrInterpretation = @"無描述資料";
     }
     self.behavior.text = behaviorOrInterpretation;
+
+    [self.picture01ImageView sd_setImageWithURL:[NSURL URLWithString:animal.pic01_URL]];
 }
 
 @end
