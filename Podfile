@@ -11,6 +11,10 @@ target 'cathaybkPractice' do
   #Internet
   pod 'AFNetworking'
 
+  #Data Structure
   pod 'OrderedDictionary',           :git => 'https://github.com/nicklockwood/OrderedDictionary'
+
+  #UI
+  pod 'SDWebImage',                     '~> 4.4.2'
 
 end
