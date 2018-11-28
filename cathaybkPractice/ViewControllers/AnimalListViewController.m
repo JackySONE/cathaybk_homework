@@ -8,25 +8,84 @@
 
 #import "AnimalListViewController.h"
 
-@interface AnimalListViewController ()
+#import "AnimalListViewModel.h"
+#import "Animal.h"
+
+#import "CommonImport.h"
+
+@interface AnimalListViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) AnimalListViewModel *viewModel;
 
 @end
 
 @implementation AnimalListViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [self getListData];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Custom Accessories
+- (AnimalListViewModel *)viewModel
+{
+    if (!_viewModel) {
+        _viewModel = [[AnimalListViewModel alloc] init];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+        weakify(self);
+        _viewModel.errorHandler = ^(NSError *error, NSString *title) {
+            // show error Alert
+        };
+
+        _viewModel.observeItemsBlock = ^(NSArray *list) {
+            strongify(self);
+            [self.tableView reloadData];
+        };
+    }
+
+    return _viewModel;
 }
-*/
+
+#pragma mark - Private
+- (void)getListData
+{
+    [self.viewModel fetchItems];
+}
+
+#pragma mark - UITableViewDelegate & UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.viewModel.items.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+
+    if (self.viewModel.items.count > indexPath.row) {
+        Animal *animal = (Animal *)self.viewModel.items[indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"%ld: %@", (long)indexPath.row, animal.nameCh];
+    }
+
+    if (indexPath.row == self.viewModel.items.count - 1) {
+        [self.viewModel loadMore];
+    }
+
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
+}
 
 @end
