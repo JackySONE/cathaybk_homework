@@ -80,7 +80,12 @@ const CGFloat kMinHeaderHeight = 44.f;
     CGFloat scrollViewMaxHeight = scrollView.frame.size.height + self.fakeNavigationBarHeightConstraint.constant - kMinHeaderHeight;
 
     // Make sure that when header is collapsed, there is still room to scroll
-    return scrollView.contentSize.height > scrollViewMaxHeight;
+    BOOL isStillRoomToScroll = scrollView.contentSize.height > scrollViewMaxHeight;
+
+    CGFloat range = kMaxHeaderHeight - kMinHeaderHeight;
+    BOOL isOffsetInRange = scrollView.contentOffset.y <= range;
+
+    return isStillRoomToScroll && isOffsetInRange;
 }
 
 - (void)setScrollPosition:(CGFloat)position
