@@ -1,23 +1,23 @@
 //
-//  AnimalListViewController.m
+//  PlantListViewController.m
 //  cathaybkPractice
 //
 //  Created by JackySONE on 2018/11/28.
 //  Copyright © 2018 JackySONE. All rights reserved.
 //
 
-#import "AnimalListViewController.h"
+#import "PlantListViewController.h"
 
-#import "AnimalListViewModel.h"
+#import "PlantListViewModel.h"
 #import "Plant.h"
-#import "AnimalListCell.h"
+#import "PlantListCell.h"
 
 #import "CommonImport.h"
 
 const CGFloat kMaxHeaderHeight = 200.f;
 const CGFloat kMinHeaderHeight = 44.f;
 
-@interface AnimalListViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface PlantListViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIView             *fakeNavigationBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *fakeNavigationBarHeightConstraint;
@@ -26,13 +26,13 @@ const CGFloat kMinHeaderHeight = 44.f;
 
 @property (weak, nonatomic) IBOutlet UITableView        *tableView;
 
-@property (nonatomic, strong) AnimalListViewModel       *viewModel;
+@property (nonatomic, strong) PlantListViewModel        *viewModel;
 
 @property (nonatomic, assign) CGFloat                   previousScrollOffset;
 
 @end
 
-@implementation AnimalListViewController
+@implementation PlantListViewController
 
 - (void)viewDidLoad
 {
@@ -49,10 +49,10 @@ const CGFloat kMinHeaderHeight = 44.f;
 }
 
 #pragma mark - Custom Accessories
-- (AnimalListViewModel *)viewModel
+- (PlantListViewModel *)viewModel
 {
     if (!_viewModel) {
-        _viewModel = [[AnimalListViewModel alloc] init];
+        _viewModel = [[PlantListViewModel alloc] init];
 
         weakify(self);
         _viewModel.errorHandler = ^(NSError *error, NSString *title) {
@@ -191,12 +191,12 @@ const CGFloat kMinHeaderHeight = 44.f;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.viewModel.items.count == 0 ? 20 : self.viewModel.items.count == 0;
+    return self.viewModel.items.count == 0 ? 20 : self.viewModel.items.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-     AnimalListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([AnimalListCell class]) forIndexPath:indexPath];
+     PlantListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([PlantListCell class]) forIndexPath:indexPath];
 
     if (self.viewModel.items.count != 0) {
         if (self.viewModel.items.count > indexPath.row) {

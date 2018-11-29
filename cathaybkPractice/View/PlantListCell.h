@@ -1,5 +1,5 @@
 //
-//  AnimalListCell.h
+//  PlantListCell.h
 //  cathaybkPractice
 //
 //  Created by JackySONE on 2018/11/28.
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AnimalListCell : UITableViewCell
+@interface PlantListCell : UITableViewCell
 
 - (void)cofigureWithModel:(Plant *)animal;
 

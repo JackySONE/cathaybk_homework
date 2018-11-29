@@ -1,5 +1,5 @@
 //
-//  AnimalListViewController.h
+//  PlantListViewController.h
 //  cathaybkPractice
 //
 //  Created by JackySONE on 2018/11/28.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AnimalListViewController : UIViewController
+@interface PlantListViewController : UIViewController
 
 @end
 

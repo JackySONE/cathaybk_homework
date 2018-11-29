@@ -1,18 +1,18 @@
 //
-//  AnimalListViewModel.m
+//  PlantListViewModel.m
 //  cathaybkPractice
 //
 //  Created by JackySONE on 2018/11/28.
 //  Copyright © 2018 JackySONE. All rights reserved.
 //
 
-#import "AnimalListViewModel.h"
+#import "PlantListViewModel.h"
 
 #import "PlantDataAPI.h"
 
 #import "CommonImport.h"
 
-@implementation AnimalListViewModel
+@implementation PlantListViewModel
 
 #pragma mark - Life Cycle
 - (instancetype)init

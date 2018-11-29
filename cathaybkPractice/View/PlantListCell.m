@@ -1,18 +1,18 @@
 //
-//  AnimalListCell.m
+//  PlantListCell.m
 //  cathaybkPractice
 //
 //  Created by JackySONE on 2018/11/28.
 //  Copyright © 2018 JackySONE. All rights reserved.
 //
 
-#import "AnimalListCell.h"
+#import "PlantListCell.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
 #import "Plant.h"
 
-@interface AnimalListCell ()
+@interface PlantListCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *picture01ImageView;
 @property (weak, nonatomic) IBOutlet UILabel *name;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation AnimalListCell
+@implementation PlantListCell
 
 - (void)cofigureWithModel:(Plant *)plant
 {
