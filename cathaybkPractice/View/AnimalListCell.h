@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class Animal;
+@class Plant;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AnimalListCell : UITableViewCell
 
-- (void)cofigureWithModel:(Animal *)animal;
+- (void)cofigureWithModel:(Plant *)animal;
 
 @end
 

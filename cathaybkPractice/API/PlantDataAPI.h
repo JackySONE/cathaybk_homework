@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@class Animal;
+@class Plant;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PlantDataAPI : NSObject
 
-+ (void)getPlantListWithLimit:(NSNumber *)limit offset:(NSNumber *)offset completion:(void (^_Nullable)(NSArray<Animal *> * _Nullable itemListEntries, NSError * _Nullable error))completionBlock;
++ (void)getPlantListWithLimit:(NSNumber *)limit offset:(NSNumber *)offset completion:(void (^_Nullable)(NSArray<Plant *> * _Nullable itemListEntries, NSError * _Nullable error))completionBlock;
 
 @end
 

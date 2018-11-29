@@ -9,7 +9,7 @@
 #import "AnimalListViewController.h"
 
 #import "AnimalListViewModel.h"
-#import "Animal.h"
+#import "Plant.h"
 #import "AnimalListCell.h"
 
 #import "CommonImport.h"
@@ -200,7 +200,7 @@ const CGFloat kMinHeaderHeight = 44.f;
 
     if (self.viewModel.items.count != 0) {
         if (self.viewModel.items.count > indexPath.row) {
-            Animal *animal = (Animal *)self.viewModel.items[indexPath.row];
+            Plant *animal = (Plant *)self.viewModel.items[indexPath.row];
             [cell cofigureWithModel:animal];
         }
 

@@ -41,7 +41,7 @@
     self.isFetchingItems = YES;
 
     weakify(self);
-    [PlantDataAPI getPlantListWithLimit:@(self.limitPerPage) offset:@(self.currentOffset) completion:^(NSArray<Animal *> * _Nullable itemListEntries, NSError * _Nullable error) {
+    [PlantDataAPI getPlantListWithLimit:@(self.limitPerPage) offset:@(self.currentOffset) completion:^(NSArray<Plant *> * _Nullable itemListEntries, NSError * _Nullable error) {
         strongify(self);
 
         self.hasMoreItems     = (itemListEntries.count == self.limitPerPage);

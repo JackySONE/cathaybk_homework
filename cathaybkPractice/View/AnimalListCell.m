@@ -10,7 +10,7 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-#import "Animal.h"
+#import "Plant.h"
 
 @interface AnimalListCell ()
 
@@ -23,18 +23,18 @@
 
 @implementation AnimalListCell
 
-- (void)cofigureWithModel:(Animal *)animal
+- (void)cofigureWithModel:(Plant *)plant
 {
-    self.name.text = animal.nameCh;
-    self.location.text = animal.location;
+    self.name.text = plant.nameCh;
+    self.location.text = plant.location;
 
-    NSString *behaviorOrInterpretation = [animal.behavior isEqualToString:@""] ? animal.interpretation : animal.behavior;
+    NSString *behaviorOrInterpretation = [plant.pFeature isEqualToString:@""] ? plant.pBrief : plant.pFeature;
     if ([behaviorOrInterpretation isEqualToString:@""]) {
         behaviorOrInterpretation = @"無描述資料";
     }
     self.behavior.text = behaviorOrInterpretation;
 
-    [self.picture01ImageView sd_setImageWithURL:[NSURL URLWithString:animal.pic01_URL]];
+    [self.picture01ImageView sd_setImageWithURL:[NSURL URLWithString:plant.pic01_URL]];
 }
 
 @end
