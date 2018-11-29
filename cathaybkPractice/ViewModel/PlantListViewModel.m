@@ -1,18 +1,18 @@
 //
-//  AnimalListViewModel.m
+//  PlantListViewModel.m
 //  cathaybkPractice
 //
 //  Created by JackySONE on 2018/11/28.
 //  Copyright © 2018 JackySONE. All rights reserved.
 //
 
-#import "AnimalListViewModel.h"
+#import "PlantListViewModel.h"
 
-#import "AnimalDataAPI.h"
+#import "PlantDataAPI.h"
 
 #import "CommonImport.h"
 
-@implementation AnimalListViewModel
+@implementation PlantListViewModel
 
 #pragma mark - Life Cycle
 - (instancetype)init
@@ -41,7 +41,7 @@
     self.isFetchingItems = YES;
 
     weakify(self);
-    [AnimalDataAPI getAnimalListWithLimit:@(self.limitPerPage) offset:@(self.currentOffset) completion:^(NSArray<Animal *> * _Nullable itemListEntries, NSError * _Nullable error) {
+    [PlantDataAPI getPlantListWithLimit:@(self.limitPerPage) offset:@(self.currentOffset) completion:^(NSArray<Plant *> * _Nullable itemListEntries, NSError * _Nullable error) {
         strongify(self);
 
         self.hasMoreItems     = (itemListEntries.count == self.limitPerPage);
