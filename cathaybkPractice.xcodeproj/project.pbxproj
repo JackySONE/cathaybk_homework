@@ -14,13 +14,13 @@
 		9B6AECFC21AD1F52000E96FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6AECFA21AD1F52000E96FB /* LaunchScreen.storyboard */; };
 		9B6AECFF21AD1F52000E96FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AECFE21AD1F52000E96FB /* main.m */; };
 		9B6AED0F21AD29BA000E96FB /* HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED0D21AD29B9000E96FB /* HTTPSessionManager.m */; };
-		9B6AED1321ADA585000E96FB /* AnimalDataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1221ADA585000E96FB /* AnimalDataAPI.m */; };
+		9B6AED1321ADA585000E96FB /* PlantDataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1221ADA585000E96FB /* PlantDataAPI.m */; };
 		9B6AED1821ADAB38000E96FB /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1721ADAB38000E96FB /* BaseResponse.m */; };
-		9B6AED1B21ADAF72000E96FB /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1A21ADAF72000E96FB /* Animal.m */; };
-		9B6AED1F21AE5ED5000E96FB /* AnimalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1E21AE5ED5000E96FB /* AnimalListViewController.m */; };
+		9B6AED1B21ADAF72000E96FB /* Plant.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1A21ADAF72000E96FB /* Plant.m */; };
+		9B6AED1F21AE5ED5000E96FB /* PlantListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1E21AE5ED5000E96FB /* PlantListViewController.m */; };
 		9B6AED2321AE604F000E96FB /* PageBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED2221AE604F000E96FB /* PageBaseViewModel.m */; };
-		9B6AED2621AE6348000E96FB /* AnimalListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED2521AE6348000E96FB /* AnimalListViewModel.m */; };
-		9B6AED2C21AE6F37000E96FB /* AnimalListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED2B21AE6F37000E96FB /* AnimalListCell.m */; };
+		9B6AED2621AE6348000E96FB /* PlantListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED2521AE6348000E96FB /* PlantListViewModel.m */; };
+		9B6AED2C21AE6F37000E96FB /* PlantListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED2B21AE6F37000E96FB /* PlantListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,21 +36,21 @@
 		9B6AECFE21AD1F52000E96FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B6AED0D21AD29B9000E96FB /* HTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPSessionManager.m; sourceTree = "<group>"; };
 		9B6AED0E21AD29BA000E96FB /* HTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSessionManager.h; sourceTree = "<group>"; };
-		9B6AED1121ADA585000E96FB /* AnimalDataAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalDataAPI.h; sourceTree = "<group>"; };
-		9B6AED1221ADA585000E96FB /* AnimalDataAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalDataAPI.m; sourceTree = "<group>"; };
+		9B6AED1121ADA585000E96FB /* PlantDataAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlantDataAPI.h; sourceTree = "<group>"; };
+		9B6AED1221ADA585000E96FB /* PlantDataAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlantDataAPI.m; sourceTree = "<group>"; };
 		9B6AED1621ADAB38000E96FB /* BaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
 		9B6AED1721ADAB38000E96FB /* BaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
-		9B6AED1921ADAF72000E96FB /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
-		9B6AED1A21ADAF72000E96FB /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
-		9B6AED1D21AE5ED5000E96FB /* AnimalListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalListViewController.h; sourceTree = "<group>"; };
-		9B6AED1E21AE5ED5000E96FB /* AnimalListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalListViewController.m; sourceTree = "<group>"; };
+		9B6AED1921ADAF72000E96FB /* Plant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plant.h; sourceTree = "<group>"; };
+		9B6AED1A21ADAF72000E96FB /* Plant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Plant.m; sourceTree = "<group>"; };
+		9B6AED1D21AE5ED5000E96FB /* PlantListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlantListViewController.h; sourceTree = "<group>"; };
+		9B6AED1E21AE5ED5000E96FB /* PlantListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlantListViewController.m; sourceTree = "<group>"; };
 		9B6AED2121AE604F000E96FB /* PageBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageBaseViewModel.h; sourceTree = "<group>"; };
 		9B6AED2221AE604F000E96FB /* PageBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageBaseViewModel.m; sourceTree = "<group>"; };
-		9B6AED2421AE6348000E96FB /* AnimalListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalListViewModel.h; sourceTree = "<group>"; };
-		9B6AED2521AE6348000E96FB /* AnimalListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalListViewModel.m; sourceTree = "<group>"; };
+		9B6AED2421AE6348000E96FB /* PlantListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlantListViewModel.h; sourceTree = "<group>"; };
+		9B6AED2521AE6348000E96FB /* PlantListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlantListViewModel.m; sourceTree = "<group>"; };
 		9B6AED2821AE6787000E96FB /* CommonImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonImport.h; sourceTree = "<group>"; };
-		9B6AED2A21AE6F37000E96FB /* AnimalListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalListCell.h; sourceTree = "<group>"; };
-		9B6AED2B21AE6F37000E96FB /* AnimalListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalListCell.m; sourceTree = "<group>"; };
+		9B6AED2A21AE6F37000E96FB /* PlantListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlantListCell.h; sourceTree = "<group>"; };
+		9B6AED2B21AE6F37000E96FB /* PlantListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlantListCell.m; sourceTree = "<group>"; };
 		9B8A906D61E7EFE6EC596A7C /* Pods-cathaybkPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cathaybkPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-cathaybkPractice/Pods-cathaybkPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				9B6AED1021ADA4D7000E96FB /* Networking */,
-				9B6AED1121ADA585000E96FB /* AnimalDataAPI.h */,
-				9B6AED1221ADA585000E96FB /* AnimalDataAPI.m */,
+				9B6AED1121ADA585000E96FB /* PlantDataAPI.h */,
+				9B6AED1221ADA585000E96FB /* PlantDataAPI.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -127,8 +127,8 @@
 			children = (
 				9B6AED1621ADAB38000E96FB /* BaseResponse.h */,
 				9B6AED1721ADAB38000E96FB /* BaseResponse.m */,
-				9B6AED1921ADAF72000E96FB /* Animal.h */,
-				9B6AED1A21ADAF72000E96FB /* Animal.m */,
+				9B6AED1921ADAF72000E96FB /* Plant.h */,
+				9B6AED1A21ADAF72000E96FB /* Plant.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,8 +145,8 @@
 		9B6AED1C21AE5E99000E96FB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9B6AED1D21AE5ED5000E96FB /* AnimalListViewController.h */,
-				9B6AED1E21AE5ED5000E96FB /* AnimalListViewController.m */,
+				9B6AED1D21AE5ED5000E96FB /* PlantListViewController.h */,
+				9B6AED1E21AE5ED5000E96FB /* PlantListViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,8 +156,8 @@
 			children = (
 				9B6AED2121AE604F000E96FB /* PageBaseViewModel.h */,
 				9B6AED2221AE604F000E96FB /* PageBaseViewModel.m */,
-				9B6AED2421AE6348000E96FB /* AnimalListViewModel.h */,
-				9B6AED2521AE6348000E96FB /* AnimalListViewModel.m */,
+				9B6AED2421AE6348000E96FB /* PlantListViewModel.h */,
+				9B6AED2521AE6348000E96FB /* PlantListViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -165,8 +165,8 @@
 		9B6AED2921AE6F0D000E96FB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9B6AED2A21AE6F37000E96FB /* AnimalListCell.h */,
-				9B6AED2B21AE6F37000E96FB /* AnimalListCell.m */,
+				9B6AED2A21AE6F37000E96FB /* PlantListCell.h */,
+				9B6AED2B21AE6F37000E96FB /* PlantListCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,16 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B6AED2621AE6348000E96FB /* AnimalListViewModel.m in Sources */,
+				9B6AED2621AE6348000E96FB /* PlantListViewModel.m in Sources */,
 				9B6AED0F21AD29BA000E96FB /* HTTPSessionManager.m in Sources */,
 				9B6AED1821ADAB38000E96FB /* BaseResponse.m in Sources */,
 				9B6AED2321AE604F000E96FB /* PageBaseViewModel.m in Sources */,
-				9B6AED1F21AE5ED5000E96FB /* AnimalListViewController.m in Sources */,
-				9B6AED1321ADA585000E96FB /* AnimalDataAPI.m in Sources */,
-				9B6AED1B21ADAF72000E96FB /* Animal.m in Sources */,
+				9B6AED1F21AE5ED5000E96FB /* PlantListViewController.m in Sources */,
+				9B6AED1321ADA585000E96FB /* PlantDataAPI.m in Sources */,
+				9B6AED1B21ADAF72000E96FB /* Plant.m in Sources */,
 				9B6AECFF21AD1F52000E96FB /* main.m in Sources */,
 				9B6AECF121AD1F50000E96FB /* AppDelegate.m in Sources */,
-				9B6AED2C21AE6F37000E96FB /* AnimalListCell.m in Sources */,
+				9B6AED2C21AE6F37000E96FB /* PlantListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  AnimalListCell.h
+//  PlantListCell.h
 //  cathaybkPractice
 //
 //  Created by JackySONE on 2018/11/28.
@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class Animal;
+@class Plant;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AnimalListCell : UITableViewCell
+@interface PlantListCell : UITableViewCell
 
-- (void)cofigureWithModel:(Animal *)animal;
+- (void)cofigureWithModel:(Plant *)animal;
 
 @end
 
