@@ -14,7 +14,7 @@
 		9B6AECFC21AD1F52000E96FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6AECFA21AD1F52000E96FB /* LaunchScreen.storyboard */; };
 		9B6AECFF21AD1F52000E96FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AECFE21AD1F52000E96FB /* main.m */; };
 		9B6AED0F21AD29BA000E96FB /* HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED0D21AD29B9000E96FB /* HTTPSessionManager.m */; };
-		9B6AED1321ADA585000E96FB /* AnimalDataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1221ADA585000E96FB /* AnimalDataAPI.m */; };
+		9B6AED1321ADA585000E96FB /* PlantDataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1221ADA585000E96FB /* PlantDataAPI.m */; };
 		9B6AED1821ADAB38000E96FB /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1721ADAB38000E96FB /* BaseResponse.m */; };
 		9B6AED1B21ADAF72000E96FB /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1A21ADAF72000E96FB /* Animal.m */; };
 		9B6AED1F21AE5ED5000E96FB /* AnimalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AED1E21AE5ED5000E96FB /* AnimalListViewController.m */; };
@@ -36,8 +36,8 @@
 		9B6AECFE21AD1F52000E96FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B6AED0D21AD29B9000E96FB /* HTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPSessionManager.m; sourceTree = "<group>"; };
 		9B6AED0E21AD29BA000E96FB /* HTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPSessionManager.h; sourceTree = "<group>"; };
-		9B6AED1121ADA585000E96FB /* AnimalDataAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalDataAPI.h; sourceTree = "<group>"; };
-		9B6AED1221ADA585000E96FB /* AnimalDataAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalDataAPI.m; sourceTree = "<group>"; };
+		9B6AED1121ADA585000E96FB /* PlantDataAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlantDataAPI.h; sourceTree = "<group>"; };
+		9B6AED1221ADA585000E96FB /* PlantDataAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlantDataAPI.m; sourceTree = "<group>"; };
 		9B6AED1621ADAB38000E96FB /* BaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
 		9B6AED1721ADAB38000E96FB /* BaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
 		9B6AED1921ADAF72000E96FB /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
@@ -116,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				9B6AED1021ADA4D7000E96FB /* Networking */,
-				9B6AED1121ADA585000E96FB /* AnimalDataAPI.h */,
-				9B6AED1221ADA585000E96FB /* AnimalDataAPI.m */,
+				9B6AED1121ADA585000E96FB /* PlantDataAPI.h */,
+				9B6AED1221ADA585000E96FB /* PlantDataAPI.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 				9B6AED1821ADAB38000E96FB /* BaseResponse.m in Sources */,
 				9B6AED2321AE604F000E96FB /* PageBaseViewModel.m in Sources */,
 				9B6AED1F21AE5ED5000E96FB /* AnimalListViewController.m in Sources */,
-				9B6AED1321ADA585000E96FB /* AnimalDataAPI.m in Sources */,
+				9B6AED1321ADA585000E96FB /* PlantDataAPI.m in Sources */,
 				9B6AED1B21ADAF72000E96FB /* Animal.m in Sources */,
 				9B6AECFF21AD1F52000E96FB /* main.m in Sources */,
 				9B6AECF121AD1F50000E96FB /* AppDelegate.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "AnimalListViewModel.h"
 
-#import "AnimalDataAPI.h"
+#import "PlantDataAPI.h"
 
 #import "CommonImport.h"
 
@@ -41,7 +41,7 @@
     self.isFetchingItems = YES;
 
     weakify(self);
-    [AnimalDataAPI getAnimalListWithLimit:@(self.limitPerPage) offset:@(self.currentOffset) completion:^(NSArray<Animal *> * _Nullable itemListEntries, NSError * _Nullable error) {
+    [PlantDataAPI getPlantListWithLimit:@(self.limitPerPage) offset:@(self.currentOffset) completion:^(NSArray<Animal *> * _Nullable itemListEntries, NSError * _Nullable error) {
         strongify(self);
 
         self.hasMoreItems     = (itemListEntries.count == self.limitPerPage);
