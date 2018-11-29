@@ -13,7 +13,7 @@
 #import "Plant.h"
 
 static NSString *const kAnimalScope = @"resourceAquire";
-static NSString *const kRid = @"a3e2b221-75e0-45c1-8f97-75acbd43d613";
+static NSString *const kRid = @"f18de02f-b6c9-47c0-8cda-50efad621c14";
 
 @implementation PlantDataAPI
 
