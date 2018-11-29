@@ -191,20 +191,22 @@ const CGFloat kMinHeaderHeight = 44.f;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.viewModel.items.count;
+    return self.viewModel.items.count == 0 ? 20 : self.viewModel.items.count == 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
      AnimalListCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([AnimalListCell class]) forIndexPath:indexPath];
 
-    if (self.viewModel.items.count > indexPath.row) {
-        Animal *animal = (Animal *)self.viewModel.items[indexPath.row];
-        [cell cofigureWithModel:animal];
-    }
+    if (self.viewModel.items.count != 0) {
+        if (self.viewModel.items.count > indexPath.row) {
+            Animal *animal = (Animal *)self.viewModel.items[indexPath.row];
+            [cell cofigureWithModel:animal];
+        }
 
-    if (indexPath.row == self.viewModel.items.count - 1) {
-        [self.viewModel loadMore];
+        if (indexPath.row == self.viewModel.items.count - 1) {
+            [self.viewModel loadMore];
+        }
     }
 
     return cell;
