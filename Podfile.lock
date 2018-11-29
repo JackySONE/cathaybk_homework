@@ -1,0 +1,54 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - OrderedDictionary (1.4)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Mantle (~> 2.1.0)
+  - OrderedDictionary (from `https://github.com/nicklockwood/OrderedDictionary`)
+  - SDWebImage (~> 4.4.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Mantle
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  OrderedDictionary:
+    :git: https://github.com/nicklockwood/OrderedDictionary
+
+CHECKOUT OPTIONS:
+  OrderedDictionary:
+    :commit: 246983a106634f77111886dc238551a670e2f49b
+    :git: https://github.com/nicklockwood/OrderedDictionary
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  OrderedDictionary: 138c8d2e358d3a0c9adda15c6c7db24e8e3b09e6
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+
+PODFILE CHECKSUM: dab7a65383304d54a358c0d3c500bd184665fe68
+
+COCOAPODS: 1.5.3
